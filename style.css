@@ -1,0 +1,58 @@
+#container{
+	margin-right: auto;
+	margin-left: auto;
+	width: 1920px;
+	height: 1080px;
+	background-color: white;
+	
+}
+#navbar{
+	width: 120px;
+	height: 820px;
+	background-color: #2699fb;
+	color: white;
+	text-align: center;
+	float: left;
+	position: relative;
+}
+#wrapper{
+	height: 820px;
+	width: 1800px;
+	background-color: white;
+	float:left;
+}
+#footer{
+	height: 260px;
+	width: 1920px;
+	background-color: pink;
+	clear:both;
+}
+#logo{
+	height: 354px;
+	width: 1800px;
+	background-color: yellow;
+	
+}
+#posts{
+	height: 466px;
+	width: 1800px;
+	background-color: gray;
+	
+}
+.navigation{
+	font-size: 11px;
+	font-family: Arial;
+	height: 30px;
+}
+#icons{
+	height: 40px;
+	width: 120px;
+	position: absolute;
+	bottom: 0;
+}
+.icon{
+	float: left;
+	font-size: 22px;
+	margin-left: 8px;
+	
+}
