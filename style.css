@@ -27,17 +27,46 @@
 	background-color: pink;
 	clear:both;
 }
-#logo{
-	height: 354px;
+#logoBar{
+	height: 324px;
 	width: 1800px;
-	background-color: yellow;
-	
+	background-color: white;
+	margin-top: 30px;
 }
 #posts{
 	height: 466px;
 	width: 1800px;
 	background-color: gray;
 	
+}
+.post{
+	float: left;
+	height: 462px;
+	width: 358px;
+	float: left;
+	background-color: white;
+	color: #2699fb;
+	border-style: groove;
+	border-width: 1px;
+	border-color: gray;
+}
+.postImage{
+	width: 358px;
+	height: 266px;
+	
+}
+.postDescription{
+	width: 320px;
+	height: 160px;
+	padding: 20px;
+	font-size: 20px;
+	position: relative;
+}
+.postBottom{
+	width: 320px;
+	height: 16px;
+	position: absolute;
+	bottom: 30px;
 }
 .navigation{
 	font-size: 11px;
@@ -56,3 +85,27 @@
 	margin-left: 8px;
 	
 }
+#logoContainer{
+	margin: auto;
+	width: 562px;
+	height: 112px;
+}
+#logoImage{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+#logoSubtitle{
+	font-size: 40px;
+	font-weight: 500;
+	padding: 3px;
+	text-align: center;
+	word-wrap: break-word;
+	width: 562px;
+	height: 62px;
+}
+
+
+
