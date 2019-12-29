@@ -9,8 +9,7 @@ class Routing {
     {
         $this->routes = [
             'index' => [
-                'controller' => 'SecurityController',
-                'action' => 'login'
+                'controller' => 'SecurityController', 'action' => 'login'
             ]
         ];
     }
