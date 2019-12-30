@@ -8,7 +8,7 @@
 		<meta name="description" content="Serwis zrzeszający wszystkich fanatyków pięknych pizz na świecie" />
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
 		
-		<link href="../The-most-beautiful-pizzas-in-the-world-website/Public/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
 	</head>
 	<body>
@@ -72,7 +72,7 @@
 				<div id="logoBar">
 				
 					<div id="logoContainer">
-						<img src="../The-most-beautiful-pizzas-in-the-world-website/Public/img/logo.png" id="logoImage">
+						<img src="../Public/img/logo.png" id="logoImage">
 						<header>
 							<div id="logoSubtitle">
 								Najpiękniejsze Pizze Świata
