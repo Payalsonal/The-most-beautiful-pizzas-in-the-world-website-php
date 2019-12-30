@@ -12,7 +12,6 @@
 	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
 	</head>
 	<body>
-	
 		<div id="container">
 			<nav>
 				<div id="navbar">
@@ -72,7 +71,7 @@
 				<div id="logoBar">
 				
 					<div id="logoContainer">
-						<img src="../Public/img/logo.png" id="logoImage">
+						<img src="../The-most-beautiful-pizzas-in-the-world-website/Public/img/logo.png" id="logoImage">
 						<header>
 							<div id="logoSubtitle">
 								Najpiękniejsze Pizze Świata
@@ -85,7 +84,7 @@
 				<div id="posts">
 					<section>
 						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
+							<img src="img/1.jpg" class="PostImage">
 							<div class="postDescription">
 								<article>
 									<h3> Top dzisiaj </h3>
@@ -104,7 +103,7 @@
 						</div>
 						
 						<div class="post">
-							<img src="../Public/img/2.jpg" class="PostImage">
+							<img src="img/2.jpg" class="PostImage">
 							<div class="postDescription">
 								<article>
 									<h3> Top tygodnia </h3>
@@ -123,7 +122,7 @@
 						</div>
 						
 						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
+							<img src="img/1.jpg" class="PostImage">
 							<div class="postDescription">
 								<article>
 									<h3> Top miesiąca </h3>
@@ -142,7 +141,7 @@
 						</div>
 						
 						<div class="post">
-							<img src="../Public/img/2.jpg" class="PostImage">
+							<img src="img/2.jpg" class="PostImage">
 							<div class="postDescription">
 								<article>
 									<h3> Top roku </h3>
@@ -161,7 +160,7 @@
 						</div>
 						
 						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
+							<img src="img/1.jpg" class="PostImage">
 							<div class="postDescription">
 								<article>
 									<h3> Top stulecia </h3>
@@ -209,11 +208,11 @@
 						<br></br>
 							<h3> Subscribe to Najpiekniejsze Pizze Świata: </h3>
 							<br></br>
-							<div id="emailText">
-								<input type="text" name="email" value="Email Adress"><br>
+							<div id="footerEmailTextWrapper">
+								<input type="text" name="email" value="Email Adress" id="footerEmailText"><br>
 							</div>
-							<div id="emailSubmit">
-								<input type="submit" name="email_submit" value="Subscribe"><br>
+							<div id="footerEmailSubmitWrapper">
+								<input type="submit" name="email_submit" value="Subscribe" id="footerEmailSubmit"><br>
 							</div>
 							</br>
 						</div>
