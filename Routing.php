@@ -2,6 +2,7 @@
 
 require_once 'Controllers\SecurityController.php';
 require_once 'Controllers\HomePageController.php';
+require_once 'Controllers\RegisterController.php';
 
 class Routing {
     private $routes = [];
@@ -11,6 +12,7 @@ class Routing {
         $this->routes = [
             'login' => ['controller' => 'SecurityController', 'action' => 'login'],
             'homePage' => ['controller' => 'HomePageController', 'action' => 'login'],
+			'register' => ['controller' => 'RegisterController', 'action' => 'register']
 			
         ];
     }
