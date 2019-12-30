@@ -1,0 +1,81 @@
+#login{
+	height: 464px;
+	width: 1800px;
+	background-color: white;
+	
+}
+#loginContainer{
+	margin: auto;
+	height: 264px;
+	width: 300px;
+	background-color: white;
+}
+#loginUserName{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	height: 50px;
+	width: 300px;
+	border-bottom: 1px solid #2699fb;
+	
+}
+#loginUserNameText{
+	float:left;
+	padding-left: 20px;
+	background-color: white;
+	height: 49px;
+	width: 250px;
+	color: #2699fb;
+	border-width: 0px;
+	
+}
+#loginUserPassword{
+	padding-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	height: 50px;
+	width: 300px;
+	border-bottom: 1px solid #2699fb;
+}
+#loginUserPasswordText{
+	padding-left: 20px;
+	background-color: white;
+	height: 49px;
+	width: 250px;
+	color: #2699fb;
+	border-width: 0px;
+}
+#iconLoginTemplate{
+	float:left;
+	margin: auto;
+	background-color: white;
+	height: 49px;
+	width: 50px;
+	color: #2699fb;
+	border-width: 0px;
+}
+#loginText{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #2699fb;
+	height: 30px;
+	width: 300px;
+}
+#loginSubmitWrapper{
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 50px;
+	width: 300px;
+	
+}
+#loginSubmit{
+	text-align: center;
+	border: 0px;
+	background-color: #7fc4fd;
+	height: 100%;
+	width: 100%;
+}

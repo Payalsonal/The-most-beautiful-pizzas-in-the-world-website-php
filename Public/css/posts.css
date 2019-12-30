@@ -1,0 +1,29 @@
+.post{
+	float: left;
+	height: 462px;
+	width: 358px;
+	float: left;
+	background-color: white;
+	color: #2699fb;
+	border-style: groove;
+	border-width: 1px;
+	border-color: gray;
+}
+.postImage{
+	width: 358px;
+	height: 266px;
+	
+}
+.postDescription{
+	width: 318px;
+	height: 160px;
+	padding: 20px;
+	font-size: 20px;
+	position: relative;
+}
+.postBottom{
+	width: 320px;
+	height: 16px;
+	position: absolute;
+	bottom: 30px;
+}

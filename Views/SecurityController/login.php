@@ -9,6 +9,7 @@
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
 		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../Public/css/login.css" rel="stylesheet" type="text/css" />
 	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
 	</head>
 	<body>
