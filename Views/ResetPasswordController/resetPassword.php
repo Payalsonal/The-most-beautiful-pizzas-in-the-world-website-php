@@ -9,7 +9,7 @@
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
 		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
-		<link href="../Public/css/changePassword.css" rel="stylesheet" type="text/css" />
+		<link href="../Public/css/resetPassword.css" rel="stylesheet" type="text/css" />
 	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
 	</head>
 	<body>
@@ -18,28 +18,21 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="changePassword">
-					<div id="changePasswordContainer">
+				<div id="resetPassword">
+					<div id="resetPasswordContainer">
 						<form action="?page=login" method="POST">
-							<div id="changeUserPassword">
-								<div id="iconChangePasswordTemplate">
+							<div id="resetUserPassword">
+								<div id="iconResetPasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="text" name="password" id="resetUserPasswordText" placeholder="email@email.com"><br>
 							</div>
 							<div style="clear: both"></div>
-							<div id="changeUserPassword">
-								<div id="iconChangePasswordTemplate">
-									ikona
-								</div>
-								<input type="password" name="password" id="changeUserPasswordText" placeholder="password"><br>
+							<div id="resetPasswordText">
+								Wyslij nowe haslo na e-mail
 							</div>
-							<div style="clear: both"></div>
-							<div id="changePasswordText">
-								Wpisz nowe hasło 2 razy
-							</div>
-							<div id="changePasswordSubmitWrapper">
-								<input type="submit" name="email_submit" value="Wyslij nowe haslo na e-mail" id="changePasswordSubmit"><br>
+							<div id="resetPasswordSubmitWrapper">
+								<input type="submit" name="email_submit" value="Continue" id="resetPasswordSubmit"><br>
 							</div>
 						</form>
 					</div>
