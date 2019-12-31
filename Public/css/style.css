@@ -43,9 +43,18 @@
 	
 }
 .navigation{
-	font-size: 11px;
+	padding: 0px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	list-style-type: none;
+}
+.navigation > li{
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 500;
 	font-family: Arial;
-	height: 30px;
+	
 }
 #icons{
 	height: 40px;

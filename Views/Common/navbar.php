@@ -1,41 +1,19 @@
 <nav>
-				<div id="navbar">
-					<br><br>
-					<div class="navigation">
-						<h3> KATEGORIE </h3>
-					</div>
-					<div class="navigation">
-						PIZZE WŁOSKIE
-					</div>
-					<div class="navigation">
-						PIZZE GRUBE
-					</div>
-					<div class="navigation">
-						PIZZE CIEŃKIE
-					</div>
-					<div class="navigation">
-						PIZZE SEROWE
-					</div>
-					<div class="navigation">
-						PIZZE ŚWIATA
-					</div>
-					<br>
-					<div class="navigation">
-						PANEL UŻYTKOWNIKA
-					</div>
-					<div class="navigation">
-						REJESTRACJA
-					</div>
-					<div class="navigation">
-						LOGIN
-					</div>
-					<div class="navigation">
-						RESET HASŁA
-					</div>
-					<div class="navigation">
-						ZMIANA HASŁA
-					</div>
-					
+	<div id="navbar">
+		<br><br>
+		<ul class="navigation">
+			<li id="navigation">  KATEGORIE </li>
+			<li> PIZZE WŁOSKIE </li>
+			<li> PIZZE GRUBE </li>
+			<li> PIZZE CIEŃKIE </li>
+			<li> PIZZE SEROWE</li>
+			<li> PIZZE ŚWIATA</li>
+			<li> PANEL UŻYTKOWNIKA</li>
+			<li> REJESTRACJA </li>
+			<li> LOGIN </li>
+			<li> RESET HASŁA </li>
+			<li> ZMIANA HASŁA </li>
+		</ul>
 				<!--	<div id="icons">
 					
 						<div class="icon">
@@ -49,5 +27,5 @@
 						</div>
 						
 					</div>-->
-				</div>
-			</nav>
+	</div>
+</nav>
