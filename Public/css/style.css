@@ -25,10 +25,11 @@
 	float:left;
 }
 #footer{
-	height: 260px;
-	width: 1920px;
+	height: 180px;
+	width: 1840px;
 	background-color: #2699fb;
 	clear:both;
+	padding: 40px;
 }
 #logoBar{
 	height: 324px;
@@ -89,74 +90,49 @@
 	width: 562px;
 	height: 62px;
 }
-#footerContainer{
-	padding: 40px;
-}
-#footerContactUs{
-	margin-left: 90px;
+.footerInformation{
+	list-style-type: none;
+	margin-left: 80px;
 	float:left;
+}
+.footerInformation > li{
+	margin-top: 10px;
 	color: white;
 	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 80%;
-}
-#footerCustomerRevice{
-	margin-left: 120px;
-	float:left;
-	color: white;
-	font-size: 18px;
-	letter-spacing: 1px;
-	line-height: 80%;
-}
-#footerInformation{
-	margin-left: 120px;
-	float:left;
-	color: white;
-	font-size: 18px;
-	letter-spacing: 1px;
-	line-height: 80%;
-	
 }
 #footerSubscribe{
-	margin-left: 120px;
+	margin-left: 80px;
+	margin-top: 20px;
 	width: 600px;
-	height: 200px;
+	height: 180px;
 	float:left;
 	color: white;
 	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 80%;
 }
-#footerEmailTextWrapper{
-	float: left;
-	width: 300px;
-	height: 50px;
-}
 #footerEmailText{
-  background-color: #2699fb;
   width: 300px;
   height: 50px;
+  float: left;
+  margin-top:20px;
+  background-color: #2699fb;
   color: white;
   border: 2px solid #7fc4fd;
-  border-radius: 4px;
   font-size: 20px;
   text-align: center;
-}
-#footerEmailSubmitWrapper{
-	float: left;
-	margin-left: 20px;
-	width: 200px;
-	height: 50px;
-	background-color: white;
-	border-radius: 15px;
 }
 #footerEmailSubmit{
-  background-color: white;
   width: 200px;
   height: 50px;
+  float: left;
+  margin-top:20px;
+  margin-left: 20px;
+  background-color: white;
   color: #2699fb;
   font-size: 20px;
-  text-align: center;
   border-radius: 15px;
   border-bottom: 0px;
   border-right: 0px;
