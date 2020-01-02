@@ -37,6 +37,13 @@
 							<div id="LoginText">
 								Zapomniałeś hasła?
 							</div>
+							<?php
+							if(isset($messages)){
+                    foreach($messages as $message) {
+                        echo $message;
+                    }
+                }
+							?>
 							<div id="LoginText">
 								Nie masz jeszcze konta?
 							</div>

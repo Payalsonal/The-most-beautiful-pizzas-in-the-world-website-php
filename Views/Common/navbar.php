@@ -2,13 +2,13 @@
 	<div id="navbar">
 		<br><br>
 		<ul class="navigation">
-			<li id="navigation">  KATEGORIE </li>
+			<li> <h3> KATEGORIE: </h3> </li>
 			<li> PIZZE WŁOSKIE </li>
 			<li> PIZZE GRUBE </li>
 			<li> PIZZE CIEŃKIE </li>
 			<li> PIZZE SEROWE</li>
 			<li> PIZZE ŚWIATA</li>
-			<li> PANEL UŻYTKOWNIKA</li>
+			<li> <h3> PANEL UŻYTKOWNIKA: </h3> </li>
 			<li> REJESTRACJA </li>
 			<li> LOGIN </li>
 			<li> RESET HASŁA </li>
