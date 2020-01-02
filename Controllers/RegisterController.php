@@ -7,8 +7,6 @@ class RegisterController extends AppController {
 
     public function register()
     {   
-	    $userRepository = new UserRepository();
-		
 		if ($this->isPost()) {
             $userName = $_POST['userName'];
             $password = $_POST['password'];

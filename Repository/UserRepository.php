@@ -21,8 +21,9 @@ class UserRepository extends Repository {
 
         return new User(
 			$user['password'],
+			$user['userName'],
 			$user['email'],
-			$user['userName']
+			$user['id']
         );
     }
 
@@ -52,6 +53,15 @@ class UserRepository extends Repository {
 			':username' => $userName,
 			':password' => $password,
 			':email' => $email
+		));
+		
+	}
+	
+	public function changeUserPassword(string $password, int $id){
+		$result_set = $this->database->connect()->prepare("UPDATE users SET password = :password WHERE id = :id");
+		$result_set->execute(array(
+			':password' => $password,
+			':id' => $id
 		));
 		
 	}

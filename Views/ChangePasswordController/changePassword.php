@@ -20,19 +20,19 @@
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="changePassword">
 					<div id="changePasswordContainer">
-						<form action="?page=login" method="POST">
+						<form action="?page=changePassword" method="POST">
 							<div id="changeUserPassword">
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password1" id="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<div id="changeUserPassword">
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password2" id="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<div id="changePasswordText">
