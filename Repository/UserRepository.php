@@ -45,4 +45,14 @@ class UserRepository extends Repository {
 
         return $result;
     }
+	
+	public function addUser(string $userName, string $password, string $email){
+		$result_set = $this->database->connect()->prepare("INSERT INTO `users` (`username`, `password`, `email`) VALUES (:username, :password, :email)");
+		$result_set->execute(array(
+			':username' => $userName,
+			':password' => $password,
+			':email' => $email
+		));
+		
+	}
 }

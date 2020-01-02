@@ -13,6 +13,7 @@ class Routing {
     {
         $this->routes = [
             'login' => ['controller' => 'SecurityController', 'action' => 'login'],
+			'logout' => ['controller' => 'SecurityController', 'action' => 'logout'],
             'homePage' => ['controller' => 'HomePageController', 'action' => 'login'],
 			'register' => ['controller' => 'RegisterController', 'action' => 'register'],
 			'changePassword' => ['controller' => 'ChangePasswordController', 'action' => 'changePassword'],

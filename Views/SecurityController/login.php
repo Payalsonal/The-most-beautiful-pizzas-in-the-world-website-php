@@ -34,9 +34,6 @@
 								<input type="password" name="password" id="loginUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
-							<div id="LoginText">
-								Zapomniałeś hasła?
-							</div>
 							<?php
 							if(isset($messages)){
                     foreach($messages as $message) {
@@ -45,7 +42,10 @@
                 }
 							?>
 							<div id="LoginText">
-								Nie masz jeszcze konta?
+								<a href="?page=resetPassword" class="login-link"> Zapomniałeś hasła? </a>
+							</div>
+							<div id="LoginText">
+								<a href="?page=register" class="login-link"> Nie masz jeszcze konta? </a>
 							</div>
 							<div id="loginSubmitWrapper">
 								<input type="submit" name="email_submit" value="Login" id="loginSubmit"><br>

@@ -55,7 +55,16 @@
 	font-size: 13px;
 	font-weight: 500;
 	font-family: Arial;
-	
+}
+.navigation-link{
+    text-decoration: none;
+	color: white;
+}
+
+.navigation-link:hover 
+{
+     text-decoration:none; 
+	 color: #B0DAFE;
 }
 #icons{
 	height: 40px;

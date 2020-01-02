@@ -38,6 +38,6 @@ class User {
     }
 	public function getRole(): array
     {
-        return $this->email;
+        return $this->role;
     }
 }

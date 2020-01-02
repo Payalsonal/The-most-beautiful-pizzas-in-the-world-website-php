@@ -10,26 +10,34 @@ class SecurityController extends AppController {
     {   
 		$userRepository = new UserRepository();
 		
-		$user = new User('admin', "admin@email.com", 'admin');
 		if ($this->isPost()) {
             $userName = $_POST['userName'];
             $password = $_POST['password'];
+			$hash_password = password_hash($password, PASSWORD_DEFAULT);
 			$user = $userRepository->getUser($userName);
             if (!$user) {
 				$this->render('login', ['messages' => ['User with this userName not exist!']]);
                 return;
             }
-
-            if ($user->getPassword() !== $password) {
+            if (!password_verify($password, $user->getPassword())) {
 				$this->render('login', ['messages' => ['Wrong password!']]);
                 return;
             }
-
+			$_SESSION["id"] = $user->getUserName();
+            $_SESSION["role"] = $user->getRole();
             $url = "http://$_SERVER[HTTP_HOST]/";
             header("Location: {$url}?page=homePage");
         }
 	
 	
         $this->render('login');
+    }
+	
+	public function logout()
+    {
+        session_unset();
+        session_destroy();
+
+        $this->render('login', ['messages' => ['You have been successfully logged out!']]);
     }
 }

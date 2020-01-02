@@ -20,18 +20,13 @@
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="register">
 					<div id="registerContainer">
-						<form action="?page=login" method="POST">
+						<form action="?page=register" method="POST">
+						
 							<div id="registerUserName">
 								<div id="iconRegisterTemplate">
 									ikona
 								</div>
 								<input type="text" name="userName" id="registerUserNameText" placeholder="Nazwa użytkownika"><br>
-							</div>
-							<div id="registerUserEmail">
-								<div id="iconRegisterTemplate">
-									ikona
-								</div>
-								<input type="text" name="email" id="registerUserEmailText" placeholder="email@email.com"><br>
 							</div>
 							<div id="registerUserPassword">
 								<div id="iconRegisterTemplate">
@@ -39,12 +34,25 @@
 								</div>
 								<input type="password" name="password" id="registerUserPasswordText" placeholder="password"><br>
 							</div>
+							<div id="registerUserEmail">
+								<div id="iconRegisterTemplate">
+									ikona
+								</div>
+								<input type="text" name="email" id="registerUserEmailText" placeholder="email@email.com"><br>
+							</div>
+							<?php
+							if(isset($messages)){
+                    foreach($messages as $message) {
+                        echo $message;
+                    }
+                }
+							?>
 							<div style="clear: both"></div>
 							<div id="RegisterText">
-								Masz już konto?
+								<a href="?page=login" class="register-link"> Masz już konto? </a>
 							</div>
 							<div id="registerSubmitWrapper">
-								<input type="submit" name="email_submit" value="Login" id="registerSubmit"><br>
+								<input type="submit" name="email_submit" value="Contionue" id="registerSubmit"><br>
 							</div>
 						</form>
 					</div>

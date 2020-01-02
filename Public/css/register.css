@@ -28,6 +28,16 @@
 	border-bottom: 1px solid #2699fb;
 	
 }
+.register-link{
+    text-decoration: none;
+	color: #2699fb;
+}
+
+.register-link:hover 
+{
+     text-decoration:none; 
+	 color: #B0DAFE;
+}
 #registerUserNameText{
 	float:left;
 	padding-left: 20px;
