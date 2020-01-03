@@ -3,11 +3,11 @@
 		<br><br>
 		<ul class="navigation">
 			<li> <h3> KATEGORIE: </h3> </li>
-			<li> PIZZE WŁOSKIE </li>
-			<li> PIZZE GRUBE </li>
-			<li> PIZZE CIEŃKIE </li>
-			<li> PIZZE SEROWE</li>
-			<li> PIZZE ŚWIATA</li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE WŁOSKIE </a> </li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE GRUBE </a> </li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE CIEŃKIE </a> </li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE SEROWE </a> </li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE ŚWIATA </a> </li>
 			<li> <h3> PANEL UŻYTKOWNIKA: </h3> </li>
 			<li> <a href="?page=register" class="navigation-link"> REJESTRACJA </a> </li>
 			<li> <a href="?page=login" class="navigation-link"> ZALOGUJ </a> </li>

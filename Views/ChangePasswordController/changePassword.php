@@ -25,14 +25,14 @@
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password1" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password1" class="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<div id="changeUserPassword">
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password2" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password2" class="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<?php
