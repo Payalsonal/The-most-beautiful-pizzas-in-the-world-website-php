@@ -30,6 +30,7 @@
 	background-color: #2699fb;
 	clear:both;
 	padding: 40px;
+	color: white;
 }
 #logoBar{
 	height: 324px;
@@ -97,7 +98,6 @@
 }
 .footerInformation > li{
 	margin-top: 15px;
-	color: white;
 	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 80%;
@@ -106,7 +106,6 @@
 	margin-left: 80px;
 	margin-top: 20px;
 	float:left;
-	color: white;
 	font-size: 18px;
 	letter-spacing: 1px;
 	line-height: 80%;
@@ -116,8 +115,8 @@
   height: 50px;
   float: left;
   margin-top:20px;
-  background-color: #2699fb;
-  color: white;
+  background-color: inherit;
+  color: inherit;
   border: 2px solid #7fc4fd;
   font-size: 20px;
   text-align: center;
