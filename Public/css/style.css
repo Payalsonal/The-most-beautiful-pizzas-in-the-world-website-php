@@ -3,12 +3,10 @@
 	margin-left: auto;
 	width: 1920px;
 	height: 1080px;
-	background-color: white;
-	
 }
 #navbar{
 	width: 120px;
-	height: 817px;
+	height: 819px;
 	background-color: #2699fb;
 	color: white;
 	text-align: center;
@@ -19,24 +17,23 @@
 	border-color: black;
 }
 #wrapper{
-	height: 818px;
-	width: 1800px;
-	background-color: white;
 	float: left;
+	width: 1800px;
+	height: 820px;
+}
+#mainContent{
+	height: 464px;
+}
+#logoBar{
+	height: 326px;
+	margin-top: 30px;
 }
 #footer{
 	height: 180px;
-	width: 1840px;
 	background-color: #2699fb;
 	clear:both;
 	padding: 40px;
 	color: white;
-}
-#logoBar{
-	height: 324px;
-	width: 1800px;
-	background-color: white;
-	margin-top: 30px;
 }
 .navigation{
 	padding: 0px;
@@ -78,12 +75,9 @@
 	width: 50px;
 }
 #logoSubtitle{
-	margin-left: auto;
-	margin-right: auto;
 	font-size: 40px;
 	padding: 3px;
 	text-align: center;
-	width: 562px;
 }
 .footerInformation{
 	list-style-type: none;
@@ -128,12 +122,5 @@
   border-bottom: 0px;
   border-right: 0px;
 }
-#mainContent{
-	height: 464px;
-	width: 1800px;
-	background-color: white;
-	
-}
-
 
 

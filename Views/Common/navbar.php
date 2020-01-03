@@ -1,4 +1,3 @@
-<nav>
 	<div id="navbar">
 		<br><br>
 		<ul class="navigation">
@@ -35,4 +34,3 @@ EOT;
 						
 					</div>-->
 	</div>
-</nav>

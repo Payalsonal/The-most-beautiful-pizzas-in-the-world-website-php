@@ -19,20 +19,20 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
+					<div class="userPanel">
 						<form action="?page=login" method="POST">
-							<div id="loginUserName">
-								<div id="iconLoginTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="userName" id="loginUserNameText" placeholder="Nazwa użytkownika"><br>
+								<input type="text" name="userName" class="input" placeholder="Nazwa użytkownika">
 							</div>
-							<div id="loginUserPassword">
-								<div id="iconLoginTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="password" name="password" id="loginUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password" class="input" placeholder="password">
 							</div>
-							<div style="clear: both"></div>
 							<?php
 							if(isset($messages)){
 								foreach($messages as $message) {
@@ -40,16 +40,15 @@
 									}
 								}
 							?>
-							<div id="LoginText">
-								<a href="?page=resetPassword" class="login-link"> Zapomniałeś hasła? </a>
+							<div class="informationText">
+								<a href="?page=login" class="link"> Zapomniałeś hasła? </a>
 							</div>
-							<div id="LoginText">
-								<a href="?page=register" class="login-link"> Nie masz jeszcze konta? </a>
+							<div class="informationText">
+								<a href="?page=login" class="link"> Nie masz jeszcze konta? </a>
 							</div>
-							<div id="loginSubmitWrapper">
-								<input type="submit" name="email_submit" value="Login" id="loginSubmit"><br>
-							</div>
+							<input type="submit" value="Continue" class="inputSubmit"><br>
 						</form>
+					</div>	
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

@@ -19,21 +19,20 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
+					<div class="userPanel">
 						<form action="?page=changePassword" method="POST">
-							<div id="changeUserPassword">
-								<div id="iconChangePasswordTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="password" name="password1" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password1" class="input" placeholder="password">
 							</div>
-							<div style="clear: both"></div>
-							<div id="changeUserPassword">
-								<div id="iconChangePasswordTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="password" name="password2" id="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password2" class="input" placeholder="password">
 							</div>
-							<div style="clear: both"></div>
 							<?php
 							if(isset($messages)){
 								foreach($messages as $message) {
@@ -41,13 +40,12 @@
 									}
 								}
 							?>
-							<div id="changePasswordText">
+							<div class="informationText">
 								Wpisz nowe hasło 2 razy
 							</div>
-							<div id="changePasswordSubmitWrapper">
-								<input type="submit" name="email_submit" value="Zmień hasło" id="changePasswordSubmit"><br>
-							</div>
+							<input type="submit" value="Zmień hasło" class="inputSubmit"><br>
 						</form>
+					</div>	
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

@@ -19,21 +19,27 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
-						<form action="?page=login" method="POST">
-							<div id="resetUserPassword">
-								<div id="iconResetPasswordTemplate">
+					<div class="userPanel">
+						<form action="?page=resetPassword" method="POST">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="password" id="resetUserPasswordText" placeholder="email@email.com"><br>
+								<input type="text" name="password2" class="input" placeholder="email@email.com">
 							</div>
-							<div style="clear: both"></div>
-							<div id="resetPasswordText">
-								Wyslij nowe haslo na e-mail
+							<?php
+							if(isset($messages)){
+								foreach($messages as $message) {
+									echo $message;
+									}
+								}
+							?>
+							<div class="informationText">
+								Wyślij nowe hasło na e-mail
 							</div>
-							<div id="resetPasswordSubmitWrapper">
-								<input type="submit" name="email_submit" value="Continue" id="resetPasswordSubmit"><br>
-							</div>
+							<input type="submit" value="Continue" class="inputSubmit"><br>
 						</form>
+					</div>	
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

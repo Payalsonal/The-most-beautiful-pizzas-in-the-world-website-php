@@ -1,4 +1,3 @@
-<footer>
 	<div id="footer">
 		<ul class = "footerInformation">
 			<li> <h3> Contact us: </h3></li>
@@ -29,4 +28,3 @@
 		</div>
 					
 	</div>
-	</footer>

@@ -19,25 +19,25 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
+					<div class="userPanel">
 						<form action="?page=register" method="POST">
-						
-							<div id="registerUserName">
-								<div id="iconRegisterTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="userName" id="registerUserNameText" placeholder="Nazwa użytkownika"><br>
+								<input type="text" name="userName" class="input" placeholder="Nazwa użytkownika">
 							</div>
-							<div id="registerUserPassword">
-								<div id="iconRegisterTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="password" name="password" id="registerUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password" class="input" placeholder="password">
 							</div>
-							<div id="registerUserEmail">
-								<div id="iconRegisterTemplate">
+							<div class="inputContainer">
+								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="email" id="registerUserEmailText" placeholder="email@email.com"><br>
+								<input type="text" name="email" class="input" placeholder="email@email.com">
 							</div>
 							<?php
 							if(isset($messages)){
@@ -46,14 +46,12 @@
 									}
 								}
 							?>
-							<div style="clear: both"></div>
-							<div id="RegisterText">
-								<a href="?page=login" class="register-link"> Masz już konto? </a>
+							<div class="informationText">
+								<a href="?page=login" class="link"> Masz już konto? </a>
 							</div>
-							<div id="registerSubmitWrapper">
-								<input type="submit" name="email_submit" value="Contionue" id="registerSubmit"><br>
-							</div>
+							<input type="submit" value="Continue" class="inputSubmit"><br>
 						</form>
+					</div>	
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>
