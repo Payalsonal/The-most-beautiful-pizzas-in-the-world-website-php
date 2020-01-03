@@ -35,11 +35,18 @@
 								<input type="password" name="password2" id="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
+							<?php
+							if(isset($messages)){
+                    foreach($messages as $message) {
+                        echo $message;
+                    }
+                }
+							?>
 							<div id="changePasswordText">
 								Wpisz nowe hasło 2 razy
 							</div>
 							<div id="changePasswordSubmitWrapper">
-								<input type="submit" name="email_submit" value="Wyslij nowe haslo na e-mail" id="changePasswordSubmit"><br>
+								<input type="submit" name="email_submit" value="Zmień hasło" id="changePasswordSubmit"><br>
 							</div>
 						</form>
 					</div>

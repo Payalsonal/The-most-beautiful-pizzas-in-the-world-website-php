@@ -9,8 +9,10 @@ class changePasswordController extends AppController {
 		if ($this->isPost()) {
             $password1 = $_POST['password1'];
             $password2 = $_POST['password2'];
-			if(!($password1 == $password2)){
+			//$this->render('changePassword', ['messages' => [$password1. '   '.$password2. '  '.!($password1 === $password2)]]);
+			if(!($password1 === $password2)){
 				$this->render('changePassword', ['messages' => ['passwords are not the same!']]);
+				return;
 			}
 			$hash_password = password_hash($password1, PASSWORD_DEFAULT);
 			$userRepository = new UserRepository();
