@@ -18,8 +18,7 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="register">
-					<div id="registerContainer">
+				<div id="mainContent">
 						<form action="?page=register" method="POST">
 						
 							<div id="registerUserName">
@@ -42,10 +41,10 @@
 							</div>
 							<?php
 							if(isset($messages)){
-                    foreach($messages as $message) {
-                        echo $message;
-                    }
-                }
+								foreach($messages as $message) {
+									echo $message;
+									}
+								}
 							?>
 							<div style="clear: both"></div>
 							<div id="RegisterText">
@@ -55,7 +54,6 @@
 								<input type="submit" name="email_submit" value="Contionue" id="registerSubmit"><br>
 							</div>
 						</form>
-					</div>
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

@@ -18,8 +18,7 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="resetPassword">
-					<div id="resetPasswordContainer">
+				<div id="mainContent">
 						<form action="?page=login" method="POST">
 							<div id="resetUserPassword">
 								<div id="iconResetPasswordTemplate">
@@ -35,7 +34,6 @@
 								<input type="submit" name="email_submit" value="Continue" id="resetPasswordSubmit"><br>
 							</div>
 						</form>
-					</div>
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

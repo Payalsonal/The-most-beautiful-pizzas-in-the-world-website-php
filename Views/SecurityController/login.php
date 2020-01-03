@@ -18,8 +18,7 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="login">
-					<div id="loginContainer">
+				<div id="mainContent">
 						<form action="?page=login" method="POST">
 							<div id="loginUserName">
 								<div id="iconLoginTemplate">
@@ -36,10 +35,10 @@
 							<div style="clear: both"></div>
 							<?php
 							if(isset($messages)){
-                    foreach($messages as $message) {
-                        echo $message;
-                    }
-                }
+								foreach($messages as $message) {
+									echo $message;
+									}
+								}
 							?>
 							<div id="LoginText">
 								<a href="?page=resetPassword" class="login-link"> Zapomniałeś hasła? </a>
@@ -51,7 +50,6 @@
 								<input type="submit" name="email_submit" value="Login" id="loginSubmit"><br>
 							</div>
 						</form>
-					</div>
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

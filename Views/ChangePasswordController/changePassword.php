@@ -18,29 +18,28 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="changePassword">
-					<div id="changePasswordContainer">
+				<div id="mainContent">
 						<form action="?page=changePassword" method="POST">
 							<div id="changeUserPassword">
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password1" class="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password1" id="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<div id="changeUserPassword">
 								<div id="iconChangePasswordTemplate">
 									ikona
 								</div>
-								<input type="password" name="password2" class="changeUserPasswordText" placeholder="password"><br>
+								<input type="password" name="password2" id="changeUserPasswordText" placeholder="password"><br>
 							</div>
 							<div style="clear: both"></div>
 							<?php
 							if(isset($messages)){
-                    foreach($messages as $message) {
-                        echo $message;
-                    }
-                }
+								foreach($messages as $message) {
+									echo $message;
+									}
+								}
 							?>
 							<div id="changePasswordText">
 								Wpisz nowe hasło 2 razy
@@ -49,7 +48,6 @@
 								<input type="submit" name="email_submit" value="Zmień hasło" id="changePasswordSubmit"><br>
 							</div>
 						</form>
-					</div>
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

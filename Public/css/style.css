@@ -38,12 +38,6 @@
 	background-color: white;
 	margin-top: 30px;
 }
-#posts{
-	height: 464px;
-	width: 1800px;
-	background-color: #2699fb;
-	
-}
 .navigation{
 	padding: 0px;
 }
@@ -133,6 +127,12 @@
   border-radius: 15px;
   border-bottom: 0px;
   border-right: 0px;
+}
+#mainContent{
+	height: 464px;
+	width: 1800px;
+	background-color: white;
+	
 }
 
 

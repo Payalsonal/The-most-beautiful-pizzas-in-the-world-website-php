@@ -17,103 +17,50 @@
 			<?php include(dirname(__DIR__).'/Common/navbar.php'); ?>
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
-				<div id="posts">
-					<section>
-						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
-							<div class="postDescription">
-								<article>
-									<h3> Top dzisiaj </h3>
-									Jakis napis
-								</article>
-								<div class="postBottom">
-									<i class="icon-heart"></i>
-									609
-									<span style="display:inline-block; width: 10;"></span>
-									<i class="icon-minus-squared"></i>
-									120
-									<span style="display:inline-block; width: 55;"></span>
-									<span style="font-weight: 700">SHARE</span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="post">
-							<img src="../Public/img/2.jpg" class="PostImage">
-							<div class="postDescription">
-								<article>
-									<h3> Top tygodnia </h3>
-									Jakis napis
-								</article>
-								<div class="postBottom">
-									<i class="icon-heart"></i>
-									609
-									<span style="display:inline-block; width: 10;"></span>
-									<i class="icon-minus-squared"></i>
-									120
-									<span style="display:inline-block; width: 55;"></span>
-									<span style="font-weight: 700">SHARE</span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
-							<div class="postDescription">
-								<article>
-									<h3> Top miesiąca </h3>
-									Jakis napis
-								</article>
-								<div class="postBottom">
-									<i class="icon-heart"></i>
-									609
-									<span style="display:inline-block; width: 10;"></span>
-									<i class="icon-minus-squared"></i>
-									120
-									<span style="display:inline-block; width: 55;"></span>
-									<span style="font-weight: 700">SHARE</span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="post">
-							<img src="../Public/img/2.jpg" class="PostImage">
-							<div class="postDescription">
-								<article>
-									<h3> Top roku </h3>
-									Jakis napis
-								</article>
-								<div class="postBottom">
-									<i class="icon-heart"></i>
-									609
-									<span style="display:inline-block; width: 10;"></span>
-									<i class="icon-minus-squared"></i>
-									120
-									<span style="display:inline-block; width: 55;"></span>
-									<span style="font-weight: 700">SHARE</span>
-								</div>
-							</div>
-						</div>
-						
-						<div class="post">
-							<img src="../Public/img/1.jpg" class="PostImage">
-							<div class="postDescription">
-								<article>
-									<h3> Top stulecia </h3>
-									Jakis napis
-								</article>
-								<div class="postBottom">
-									<i class="icon-heart"></i>
-									609
-									<span style="display:inline-block; width: 10;"></span>
-									<i class="icon-minus-squared"></i>
-									120
-									<span style="display:inline-block; width: 55;"></span>
-									<span style="font-weight: 700">SHARE</span>
-								</div>
-							</div>
-						</div>
-					<section>
+				<div id="mainContent">
+					<div class="post">
+						<img src="../Public/img/1.jpg" class="PostImage">
+						<ul class="postDescription">
+							<li> <h2> Top dzisiaj </h2> </li>
+							<li> Opis </li>
+							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+						</ul>
+					</div>
+					<div class="post">
+						<img src="../Public/img/2.jpg" class="PostImage">
+						<ul class="postDescription">
+							<li> <h2> Top tygodnia </h2> </li>
+							<li> Opis </li>
+							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+						</ul>
+					</div>
+					<div class="post">
+						<img src="../Public/img/1.jpg" class="PostImage">
+						<ul class="postDescription">
+							<li> <h2> Top miesiąca </h2> </li>
+							<li> Opis </li>
+							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+						</ul>
+					</div>
+					<div class="post">
+						<img src="../Public/img/2.jpg" class="PostImage">
+						<ul class="postDescription">
+							<li> <h2> Top roku </h2> </li>
+							<li> Opis </li>
+							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+						</ul>
+					</div>
+					
+					<div class="post">
+						<img src="../Public/img/1.jpg" class="PostImage">
+						<ul class="postDescription">
+							<li> <h2> Top stulecia </h2> </li>
+							<li> Opis </li>
+							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+						</ul>
+					</div>
+					
+					<div style="clear: both;"></div>	
 				</div>
 			</div>
 			<?php include(dirname(__DIR__).'/Common/footer.php'); ?>

@@ -1,15 +1,3 @@
-#register{
-	height: 464px;
-	width: 1800px;
-	background-color: white;
-	
-}
-#registerContainer{
-	margin: auto;
-	height: 264px;
-	width: 300px;
-	background-color: white;
-}
 #registerUserName{
 	margin-left: auto;
 	margin-right: auto;
