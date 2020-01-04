@@ -1,12 +1,19 @@
 	<div id="navbar">
 		<br><br>
 		<ul class="navigation">
+			<?php
+				if(isset($_SESSION['id'])) {
+					echo <<<EOT
 			<li> <h3> KATEGORIE: </h3> </li>
+			<li> <a href="?page=homePage" class="navigation-link"> PIZZE ŚWIATA </a> </li>
 			<li> <a href="?page=homePage" class="navigation-link"> PIZZE WŁOSKIE </a> </li>
 			<li> <a href="?page=homePage" class="navigation-link"> PIZZE GRUBE </a> </li>
 			<li> <a href="?page=homePage" class="navigation-link"> PIZZE CIEŃKIE </a> </li>
 			<li> <a href="?page=homePage" class="navigation-link"> PIZZE SEROWE </a> </li>
 			<li> <a href="?page=homePage" class="navigation-link"> PIZZE ŚWIATA </a> </li>
+EOT;
+				}
+			?>
 			<li> <h3> PANEL UŻYTKOWNIKA: </h3> </li>
 			<?php
 				if(!isset($_SESSION['id'])) {
