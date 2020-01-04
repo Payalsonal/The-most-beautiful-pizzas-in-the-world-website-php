@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Controllers\SecurityController.php';
-require_once 'Controllers\HomePageController.php';
+require_once 'Controllers\BestPizzasController.php';
 require_once 'Controllers\RegisterController.php';
 require_once 'Controllers\ChangePasswordController.php';
 require_once 'Controllers\ResetPasswordController.php';
@@ -14,7 +14,7 @@ class Routing {
         $this->routes = [
             'login' => ['controller' => 'SecurityController', 'action' => 'login'],
 			'logout' => ['controller' => 'SecurityController', 'action' => 'logout'],
-            'homePage' => ['controller' => 'HomePageController', 'action' => 'show'],
+            'bestPizzas' => ['controller' => 'BestPizzasController', 'action' => 'show'],
 			'register' => ['controller' => 'RegisterController', 'action' => 'register'],
 			'changePassword' => ['controller' => 'ChangePasswordController', 'action' => 'changePassword'],
 			'resetPassword' => ['controller' => 'ResetPasswordController', 'action' => 'resetPassword']
