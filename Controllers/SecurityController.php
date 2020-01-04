@@ -25,12 +25,15 @@ class SecurityController extends AppController {
             }
 			$_SESSION["id"] = $user->getID();
             $_SESSION["role"] = $user->getRole();
+			unset($_SESSION['userName']);
+			unset($_SESSION['password']);
             $url = "http://$_SERVER[HTTP_HOST]/";
             header("Location: {$url}?page=homePage");
         }
-	
-	
+		unset($_SESSION['userName']);
+		unset($_SESSION['password']);
         $this->render('login');
+		return;
     }
 	
 	public function logout()
@@ -39,5 +42,6 @@ class SecurityController extends AppController {
         session_destroy();
 
         $this->render('login', ['messages' => ['You have been successfully logged out!']]);
+		return;
     }
 }

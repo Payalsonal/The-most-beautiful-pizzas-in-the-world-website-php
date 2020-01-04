@@ -33,11 +33,15 @@ class RegisterController extends AppController {
 			$hash_password = password_hash($password, PASSWORD_DEFAULT);
 			$userRepository = new UserRepository();
 			$userRepository->addUser($userName, $hash_password, $email);
+			unset($_SESSION['userName']);
+			unset($_SESSION['password']);
+			unset($_SESSION['email']);
 			$url = "http://$_SERVER[HTTP_HOST]/";
             header("Location: {$url}?page=login");
-			$this->render('login', ['messages' => ['Rejestracja przebiegła pomyślnie, proszę się zalogować']]);
-			return;
         }
+		unset($_SESSION['userName']);
+		unset($_SESSION['password']);
+		unset($_SESSION['email']);
         $this->render('register');
     }
 }

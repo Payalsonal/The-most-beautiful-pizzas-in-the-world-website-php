@@ -25,7 +25,7 @@
 								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="password2" class="input" placeholder="email@email.com">
+								<input type="text" name="email" class="input" placeholder="email@email.com">
 							</div>
 							<?php
 							if(isset($messages)){
