@@ -41,7 +41,7 @@ class SecurityController extends AppController {
         session_unset();
         session_destroy();
 
-        $this->render('login', ['messages' => ['You have been successfully logged out!']]);
-		return;
+        $url = "http://$_SERVER[HTTP_HOST]/";
+        header("Location: {$url}?page=login");
     }
 }
