@@ -35,48 +35,18 @@
 									}
 								}
 							?>
-					<div class="post">
-						<img src="../Public/img/1.jpg" class="PostImage">
+					<?php foreach($posts as $post): ?>
+						<div class="post">
+						<img src="../Public/img/<?php echo $post->getCategory()."/".$post->getSource()?>" class="PostImage">
 						<ul class="postDescription">
-							<li> <h2> Top dzisiaj </h2> </li>
-							<li> Opis </li>
-							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
+							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
+							<li> <?php echo $post->getDescription()?> </li>
+							<li><?php echo $post->getLikes()?> |plusik| 
+								<?php echo $post->getDisLikes()?> |minusik| 
+								<span style="font-weight: 700">SHARE</span> |ikona| </li>
 						</ul>
 					</div>
-					<div class="post">
-						<img src="../Public/img/2.jpg" class="PostImage">
-						<ul class="postDescription">
-							<li> <h2> Top tygodnia </h2> </li>
-							<li> Opis </li>
-							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
-						</ul>
-					</div>
-					<div class="post">
-						<img src="../Public/img/1.jpg" class="PostImage">
-						<ul class="postDescription">
-							<li> <h2> Top miesiąca </h2> </li>
-							<li> Opis </li>
-							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
-						</ul>
-					</div>
-					<div class="post">
-						<img src="../Public/img/2.jpg" class="PostImage">
-						<ul class="postDescription">
-							<li> <h2> Top roku </h2> </li>
-							<li> Opis </li>
-							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
-						</ul>
-					</div>
-					
-					<div class="post">
-						<img src="../Public/img/1.jpg" class="PostImage">
-						<ul class="postDescription">
-							<li> <h2> Top stulecia </h2> </li>
-							<li> Opis </li>
-							<li>609 |plusik| 120 |minusik| <span style="font-weight: 700">SHARE</span> |ikona| </li>
-						</ul>
-					</div>
-					
+					<?php endforeach ?>
 					<div style="clear: both;"></div>	
 				</div>
 			</div>
