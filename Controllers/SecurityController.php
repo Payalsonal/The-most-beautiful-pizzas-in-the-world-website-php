@@ -28,7 +28,7 @@ class SecurityController extends AppController {
 			unset($_SESSION['userName']);
 			unset($_SESSION['password']);
             $url = "http://$_SERVER[HTTP_HOST]/";
-            header("Location: {$url}?page=postPage");
+            header("Location: {$url}?page=postPage&top");
         }
 		unset($_SESSION['userName']);
 		unset($_SESSION['password']);

@@ -28,6 +28,13 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
+					<?php
+							if(isset($messages)){
+								foreach($messages as $message) {
+									echo $message;
+									}
+								}
+							?>
 					<div class="post">
 						<img src="../Public/img/1.jpg" class="PostImage">
 						<ul class="postDescription">
