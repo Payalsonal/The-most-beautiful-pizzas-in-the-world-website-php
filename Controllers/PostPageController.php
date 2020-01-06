@@ -8,9 +8,26 @@ class PostPageController extends AppController {
 
     public function show()
     {   
+		if(!isset($_SESSION['page'])){
+				$_SESSION['page'] = 0;
+			}
+		if ($this->isPost()) {
+			if(isset($_POST['next'])){
+				unset($_POST['next']);
+				$_SESSION['page'] = $_SESSION['page'] + 1;
+			}
+			if(isset($_POST['previous'])){
+				unset($_POST['previous']);
+				$_SESSION['page'] = $_SESSION['page'] -1;
+				if($_SESSION['page'] < 0){
+					$_SESSION['page'] = 0;
+				}
+			}
+        }
 		$category = str_replace("/?page=postPage&", "", $_SERVER['REQUEST_URI']);
 		$postRepository = new PostRepository();
-		$posts = $postRepository->getPosts($category);
+		$posts = $postRepository->getPosts($category, $_SESSION['page']);
         $this->render('postPage', ['posts' => $posts]);
+		return;
     }
 }

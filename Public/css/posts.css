@@ -27,3 +27,17 @@
     bottom: 40;
 	
 }
+.arrowContainer{
+	float: left;
+}
+.arrow{
+	width: 180px;
+	height: 464px;
+	background-color: #2699fb;
+	border-style: groove;
+	border-width: 1px;
+	border-color: gray;
+}
+.arrow:hover{
+	background-color: #B0DAFE;
+}

@@ -28,13 +28,12 @@
 			<div id="wrapper">
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
-					<?php
-							if(isset($messages)){
-								foreach($messages as $message) {
-									echo $message;
-									}
-								}
-							?>
+					
+					<div class = "arrowContainer">
+						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
+							<input type="submit" name="previous" value="Poprzednia" class="arrow"><br>
+						</form>
+					</div>
 					<?php foreach($posts as $post): ?>
 						<div class="post">
 						<img src="../Public/img/<?php echo $post->getCategory()."/".$post->getSource()?>" class="PostImage">
@@ -47,6 +46,11 @@
 						</ul>
 					</div>
 					<?php endforeach ?>
+					<div class = "arrowContainer">
+						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
+							<input type="submit" name="next" value="Następna" class="arrow"><br>
+						</form>
+					</div>
 					<div style="clear: both;"></div>	
 				</div>
 			</div>
