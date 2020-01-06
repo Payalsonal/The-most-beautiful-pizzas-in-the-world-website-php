@@ -1,11 +1,11 @@
 <?php
 
 class User {
-	private $id;
-    private $password;
-    private $userName;
-	private $email;
-    private $role = ['ROLE_USER'];
+	protected $id;
+    protected $password;
+    protected $userName;
+	protected $email;
+    protected $role = ['ROLE_USER'];
 
     public function __construct(
         string $password,

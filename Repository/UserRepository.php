@@ -2,6 +2,7 @@
 
 require_once "Repository.php";
 require_once __DIR__.'//..//Model//User.php';
+require_once __DIR__.'//..//Model//Admin.php';
 
 class UserRepository extends Repository {
 
@@ -18,13 +19,20 @@ class UserRepository extends Repository {
         if($user == false) {
             return null;
         }
-
-        return new User(
+		if($user['role'] === 'admin'){
+			return new Admin(
 			$user['password'],
 			$user['userName'],
 			$user['email'],
-			$user['id']
-        );
+			$user['id']);
+		}
+		if($user['role'] === 'user'){
+			return new User(
+			$user['password'],
+			$user['userName'],
+			$user['email'],
+			$user['id']);
+		}
     }
 
     public function getUsers(): array {
@@ -48,7 +56,9 @@ class UserRepository extends Repository {
     }
 	
 	public function addUser(string $userName, string $password, string $email){
-		$result_set = $this->database->connect()->prepare("INSERT INTO `users` (`username`, `password`, `email`) VALUES (:username, :password, :email)");
+		$result_set = $this->database->connect()->prepare("INSERT INTO `users` 
+		(`username`, `password`, `email`) 
+		VALUES (:username, :password, :email)");
 		$result_set->execute(array(
 			':username' => $userName,
 			':password' => $password,
