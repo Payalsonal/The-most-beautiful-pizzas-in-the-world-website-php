@@ -25,6 +25,15 @@ class PostPageController extends AppController {
 			}
         }
 		$category = str_replace("/?page=postPage&", "", $_SERVER['REQUEST_URI']);
+		if(isset($_SESSION['category'])){
+			if($_SESSION['category'] != $category){
+				$_SESSION['category'] = $category;
+				$_SESSION['page'] = 0;
+			}
+		}
+		else{
+			$_SESSION['category'] = $category;
+		}
 		$postRepository = new PostRepository();
 		$posts = $postRepository->getPosts($category, $_SESSION['page']);
         $this->render('postPage', ['posts' => $posts]);
