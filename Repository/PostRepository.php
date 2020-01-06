@@ -8,7 +8,9 @@ class PostRepository extends Repository {
     public function getPosts(string $category): array {
         $result = [];
         $stmt = $this->database->connect()->prepare("
-			SELECT post.* FROM post, postcategory WHERE postcategory.category = '$category' and postcategory.id = post.categoryID
+			SELECT post.* 
+			FROM post, postcategory 
+			WHERE postcategory.category = '$category' and postcategory.id = post.categoryID 
         ");
         $stmt->execute();
         $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);

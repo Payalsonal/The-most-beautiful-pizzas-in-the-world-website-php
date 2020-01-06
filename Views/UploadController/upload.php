@@ -20,18 +20,12 @@
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
 					<div class="userPanel">
-						<form action="?page=login" method="POST">
+						<form action="?page=upload" method="POST" enctype="multipart/form-data">
 							<div class="inputContainer">
 								<div class="inputIcon">
 									ikona
 								</div>
-								<input type="text" name="userName" class="input" placeholder="Nazwa użytkownika">
-							</div>
-							<div class="inputContainer">
-								<div class="inputIcon">
-									ikona
-								</div>
-								<input type="password" name="password" class="input" placeholder="password">
+								<input type="file" name="file" class="input" placeholder="Nazwa użytkownika">
 							</div>
 							<?php
 							if(isset($messages)){
@@ -40,12 +34,6 @@
 									}
 								}
 							?>
-							<div class="informationText">
-								<a href="?page=resetPassword" class="link"> Zapomniałeś hasła? </a>
-							</div>
-							<div class="informationText">
-								<a href="?page=register" class="link"> Nie masz jeszcze konta? </a>
-							</div>
 							<input type="submit" value="Continue" class="inputSubmit"><br>
 						</form>
 					</div>	

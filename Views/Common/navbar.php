@@ -27,6 +27,7 @@ EOT;
 					echo <<<EOT
 					<li> <a href='?page=logout' class='navigation-link'> WYLOGUJ </a>
 					<li> <a href='?page=changePassword' class='navigation-link'> ZMIANA HASŁA </a> </li>
+					<li> <a href='?page=upload' class='navigation-link'> WYŚLIJ ZDJ </a> </li>
 EOT;
 				}
 			?>

@@ -2,7 +2,7 @@
 
 require_once 'AppController.php';
 
-class changePasswordController extends AppController {
+class ChangePasswordController extends AppController {
 
     public function changePassword()
     {   

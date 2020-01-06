@@ -1,0 +1,35 @@
+.userPanel{
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.inputContainer{
+	padding-top: 10px;
+	border-bottom: 1px solid #2699fb;
+}
+.input{
+	padding-left: 20px;
+	height: 49px;
+	width: 250px;
+	color: #2699fb;
+	border-width: 0px;
+}
+.inputIcon{
+	float:left;
+	height: 49px;
+	width: 50px;
+	color: #2699fb;
+}
+.inputSubmit{
+	margin-top: 10px;
+	border: 0px;
+	background-color: #7fc4fd;
+	height: 50px;
+	width: 100%;
+}
+.informationText{
+	margin-top: 10px;
+	text-align: center;
+	color: #2699fb;
+	height: 30px;
+}

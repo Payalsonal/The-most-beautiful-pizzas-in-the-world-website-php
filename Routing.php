@@ -5,6 +5,7 @@ require_once 'Controllers\PostPageController.php';
 require_once 'Controllers\RegisterController.php';
 require_once 'Controllers\ChangePasswordController.php';
 require_once 'Controllers\ResetPasswordController.php';
+require_once 'Controllers\UploadController.php';
 
 class Routing {
     private $routes = [];
@@ -17,7 +18,8 @@ class Routing {
             'postPage' => ['controller' => 'PostPageController', 'action' => 'show'],
 			'register' => ['controller' => 'RegisterController', 'action' => 'register'],
 			'changePassword' => ['controller' => 'ChangePasswordController', 'action' => 'changePassword'],
-			'resetPassword' => ['controller' => 'ResetPasswordController', 'action' => 'resetPassword']
+			'resetPassword' => ['controller' => 'ResetPasswordController', 'action' => 'resetPassword'],
+			'upload' => ['controller' => 'UploadController', 'action' => 'upload']
 			
         ];
     }
