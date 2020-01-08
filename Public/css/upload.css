@@ -8,16 +8,22 @@
 	border-bottom: 1px solid #2699fb;
 }
 .input{
+	margin-top:15px;
 	padding-left: 20px;
-	height: 49px;
+	height: 34px;
 	width: 250px;
 	color: #2699fb;
 	border-width: 0px;
 }
+.input::placeholder {
+   color: #2699fb;
+}
 .inputIcon{
+	padding: 10px;
+	font-size: 30px;
 	float:left;
-	height: 49px;
-	width: 50px;
+	height: 29px;
+	width: 30px;
 	color: #2699fb;
 }
 .inputSubmit{

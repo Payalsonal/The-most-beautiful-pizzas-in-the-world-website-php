@@ -10,7 +10,7 @@
 		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/login.css" rel="stylesheet" type="text/css" />
-	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
+	<	<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -23,13 +23,13 @@
 						<form action="?page=login" method="POST">
 							<div class="inputContainer">
 								<div class="inputIcon">
-									ikona
+									<i class="far fa-user"></i>
 								</div>
 								<input type="text" name="userName" class="input" placeholder="Nazwa użytkownika">
 							</div>
 							<div class="inputContainer">
 								<div class="inputIcon">
-									ikona
+									<i class="fas fa-lock-open"></i>
 								</div>
 								<input type="password" name="password" class="input" placeholder="password">
 							</div>

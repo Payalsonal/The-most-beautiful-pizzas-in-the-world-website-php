@@ -7,10 +7,9 @@
 		<title>Najpiękniejsze Pizze Świata</title>
 		<meta name="description" content="Serwis zrzeszający wszystkich fanatyków pięknych pizz na świecie" />
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
-		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
-		<link href="../Public/css/login.css" rel="stylesheet" type="text/css" />
-	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
+		<link href="../Public/css/upload.css" rel="stylesheet" type="text/css" />
+		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -23,7 +22,7 @@
 						<form action="?page=upload" method="POST" enctype="multipart/form-data">
 							<div class="inputContainer">
 								<div class="inputIcon">
-									ikona
+									<i class="far fa-image"></i>
 								</div>
 								<input type="file" name="file" class="input" placeholder="Nazwa użytkownika">
 							</div>

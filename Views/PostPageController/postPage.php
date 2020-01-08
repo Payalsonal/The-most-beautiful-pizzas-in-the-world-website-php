@@ -17,10 +17,9 @@
 		<title>Najpiękniejsze Pizze Świata</title>
 		<meta name="description" content="Serwis zrzeszający wszystkich fanatyków pięknych pizz na świecie" />
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
-		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/posts.css" rel="stylesheet" type="text/css" />
-	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
+		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -40,9 +39,9 @@
 						<ul class="postDescription">
 							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
 							<li> <?php echo $post->getDescription()?> </li>
-							<li><?php echo $post->getLikes()?> |plusik| 
-								<?php echo $post->getDisLikes()?> |minusik| 
-								<span style="font-weight: 700">SHARE</span> |ikona| </li>
+							<li><?php echo $post->getLikes()?> <i class="fas fa-heart"></i></i>
+								<?php echo $post->getDisLikes()?> <i class="fas fa-heart-broken"></i></i>
+								<span style="font-weight: 700">SHARE</span> <i class="fas fa-share-alt"></i> </li>
 						</ul>
 					</div>
 					<?php endforeach ?>

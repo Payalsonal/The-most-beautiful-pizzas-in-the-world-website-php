@@ -21,7 +21,7 @@
 		
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/changePassword.css" rel="stylesheet" type="text/css" />
-	<!--	<link href="../Public/css/fontello.css" rel="stylesheet" type="text/css" /> -->
+		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 	
@@ -34,13 +34,13 @@
 						<form action="?page=changePassword" method="POST">
 							<div class="inputContainer">
 								<div class="inputIcon">
-									ikona
+									<i class="fas fa-lock-open"></i>
 								</div>
 								<input type="password" name="password1" class="input" placeholder="password">
 							</div>
 							<div class="inputContainer">
 								<div class="inputIcon">
-									ikona
+									<i class="fas fa-lock-open"></i>
 								</div>
 								<input type="password" name="password2" class="input" placeholder="password">
 							</div>
