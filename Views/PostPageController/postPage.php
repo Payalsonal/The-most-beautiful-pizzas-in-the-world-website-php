@@ -30,7 +30,9 @@
 					
 					<div class = "arrowContainer">
 						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
-							<input type="submit" name="previous" value="Poprzednia" class="arrow"><br>
+								<button type="submit" name="previous" value="Następna" class="arrow">
+									<i class="fas fa-arrow-left"></i>
+								</button>
 						</form>
 					</div>
 					<?php foreach($posts as $post): ?>
@@ -39,7 +41,7 @@
 						<ul class="postDescription">
 							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
 							<li> <?php echo $post->getDescription()?> </li>
-							<li><?php echo $post->getLikes()?> <i class="fas fa-heart"></i></i>
+							<li><?php echo $post->getLikes()?> <i class="fas fa-heart"></i>
 								<?php echo $post->getDisLikes()?> <i class="fas fa-heart-broken"></i></i>
 								<span style="font-weight: 700">SHARE</span> <i class="fas fa-share-alt"></i> </li>
 						</ul>
@@ -47,7 +49,9 @@
 					<?php endforeach ?>
 					<div class = "arrowContainer">
 						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
-							<input type="submit" name="next" value="Następna" class="arrow"><br>
+							<button type="submit" name="next" value="Następna" class="arrow">
+									<i class="fas fa-arrow-right"></i>
+								</button>
 						</form>
 					</div>
 					<div style="clear: both;"></div>	

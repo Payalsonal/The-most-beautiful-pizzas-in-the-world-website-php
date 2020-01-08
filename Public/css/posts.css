@@ -34,13 +34,13 @@
 	float: left;
 }
 .arrow{
+	color: #2699fb;
+	font-size: 100px;
+	border: none;
 	width: 180px;
 	height: 464px;
-	background-color: #2699fb;
-	border-style: groove;
-	border-width: 1px;
-	border-color: gray;
+	background-color: white;
 }
 .arrow:hover{
-	background-color: #B0DAFE;
+	color: #B0DAFE;
 }
