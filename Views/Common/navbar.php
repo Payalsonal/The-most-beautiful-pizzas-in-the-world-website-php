@@ -32,17 +32,12 @@ EOT;
 				}
 			?>
 		</ul>
-				<!--	<div id="icons">
-					
-						<div class="icon">
-							<i class="icon-instagram"></i>
-						</div>
-						<div class="icon">
-							<i class="icon-twitter"></i>
-						</div>
-						<div class="icon">
-							<i class="icon-facebook"></i>
-						</div>
+					<div id="icons">
+				
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-twitter"></i>
+							<i class="fab fa-facebook-f"></i>
+				
 						
-					</div>-->
+					</div>
 	</div>

@@ -30,9 +30,9 @@
 					
 					<div class = "arrowContainer">
 						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
-								<button type="submit" name="previous" value="Następna" class="arrow">
-									<i class="fas fa-arrow-left"></i>
-								</button>
+							<button type="submit" name="previous" value="Następna" class="arrow">
+								<i class="fas fa-arrow-left"></i>
+							</button>
 						</form>
 					</div>
 					<?php foreach($posts as $post): ?>
@@ -50,8 +50,8 @@
 					<div class = "arrowContainer">
 						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">
 							<button type="submit" name="next" value="Następna" class="arrow">
-									<i class="fas fa-arrow-right"></i>
-								</button>
+								<i class="fas fa-arrow-right"></i>
+							</button>
 						</form>
 					</div>
 					<div style="clear: both;"></div>	
