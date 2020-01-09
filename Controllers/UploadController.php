@@ -45,11 +45,11 @@ class UploadController extends AppController {
                 $this->render('upload', ['messages' => ['error, proszę spróbować później']]);
                 return;
             }
-                $uploadRepository = new UploadRepository();
-                $uploadRepository->upload($file_name_new, $title, $description);
+            $uploadRepository = new UploadRepository();
+            $uploadRepository->upload($file_name_new, $title, $description);
 
-                $this->render('upload', ['messages' => ['Wkrótce administrator rozważy wysłany post']]);
-                return;
+            $this->render('upload', ['messages' => ['Wkrótce administrator rozważy wysłany post']]);
+            return;
         }
     }
 }

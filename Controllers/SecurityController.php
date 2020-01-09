@@ -7,9 +7,7 @@ require_once __DIR__.'//..//Repository//UserRepository.php';
 class SecurityController extends AppController {
 
     public function login()
-    {   
-		$userRepository = new UserRepository();
-		
+    {
 		if (!$this->isPost()) {
             unset($_SESSION['userName']);
             unset($_SESSION['password']);
@@ -18,7 +16,8 @@ class SecurityController extends AppController {
         }
         $userName = $_POST['userName'];
         $password = $_POST['password'];
-        $hash_password = password_hash($password, PASSWORD_DEFAULT);
+        password_hash($password, PASSWORD_DEFAULT);
+        $userRepository = new UserRepository();
         $user = $userRepository->getUser($userName);
         if (!$user) {
             $this->render('login', ['messages' => ['User with this userName not exist!']]);
@@ -34,7 +33,6 @@ class SecurityController extends AppController {
         unset($_SESSION['password']);
         $url = "http://$_SERVER[HTTP_HOST]/";
         header("Location: {$url}?page=postPage&top");
-
     }
 	
 	public function logout()

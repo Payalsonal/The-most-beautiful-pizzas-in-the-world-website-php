@@ -19,10 +19,10 @@ class PostPageController extends AppController {
 			if(isset($_POST['previous'])){
 				unset($_POST['previous']);
 				$_SESSION['page'] = $_SESSION['page'] -1;
-				if($_SESSION['page'] < 0){
-					$_SESSION['page'] = 0;
-				}
 			}
+            if($_SESSION['page'] < 0){
+                $_SESSION['page'] = 0;
+            }
         }
 		$category = str_replace("/?page=postPage&", "", $_SERVER['REQUEST_URI']);
 		if(isset($_SESSION['category'])){
