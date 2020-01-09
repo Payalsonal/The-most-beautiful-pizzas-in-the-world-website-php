@@ -1,1 +1,1 @@
-MY NAME IS JEFF
+Website that brings together all lovers of beautiful pizzas, users can add their photos, add them favorites, share and write comments
