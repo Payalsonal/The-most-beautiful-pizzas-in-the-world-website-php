@@ -10,30 +10,31 @@ class SecurityController extends AppController {
     {   
 		$userRepository = new UserRepository();
 		
-		if ($this->isPost()) {
-            $userName = $_POST['userName'];
-            $password = $_POST['password'];
-			$hash_password = password_hash($password, PASSWORD_DEFAULT);
-			$user = $userRepository->getUser($userName);
-            if (!$user) {
-				$this->render('login', ['messages' => ['User with this userName not exist!']]);
-                return;
-            }
-            if (!password_verify($password, $user->getPassword())) {
-				$this->render('login', ['messages' => ['Wrong password!']]);
-                return;
-            }
-			$_SESSION["id"] = $user->getID();
-            $_SESSION["role"] = $user->getRole();
-			unset($_SESSION['userName']);
-			unset($_SESSION['password']);
-            $url = "http://$_SERVER[HTTP_HOST]/";
-            header("Location: {$url}?page=postPage&top");
+		if (!$this->isPost()) {
+            unset($_SESSION['userName']);
+            unset($_SESSION['password']);
+            $this->render('login');
+            return;
         }
-		unset($_SESSION['userName']);
-		unset($_SESSION['password']);
-        $this->render('login');
-		return;
+        $userName = $_POST['userName'];
+        $password = $_POST['password'];
+        $hash_password = password_hash($password, PASSWORD_DEFAULT);
+        $user = $userRepository->getUser($userName);
+        if (!$user) {
+            $this->render('login', ['messages' => ['User with this userName not exist!']]);
+            return;
+        }
+        if (!password_verify($password, $user->getPassword())) {
+            $this->render('login', ['messages' => ['Wrong password!']]);
+            return;
+        }
+        $_SESSION["id"] = $user->getID();
+        $_SESSION["role"] = $user->getRole();
+        unset($_SESSION['userName']);
+        unset($_SESSION['password']);
+        $url = "http://$_SERVER[HTTP_HOST]/";
+        header("Location: {$url}?page=postPage&top");
+
     }
 	
 	public function logout()
