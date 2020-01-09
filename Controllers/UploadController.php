@@ -1,6 +1,7 @@
 <?php
 
 require_once 'AppController.php';
+require_once __DIR__.'//..//Repository//UploadRepository.php';
 
 class UploadController extends AppController {
 
@@ -13,6 +14,10 @@ class UploadController extends AppController {
 				$file_tmp = $file['tmp_name'];
 				$file_size = $file['size'];
 				$file_error = $file['error'];
+                $title = $_POST['title'];
+                $description = $_POST['description'];
+                unset($_POST['title']);
+                unset($_POST['description']);
 				unset($_FILES);
 				
 				$file_ext = explode('.', $file_name);
@@ -26,6 +31,8 @@ class UploadController extends AppController {
 							$file_destination = 'Uploads/'.$file_name_new;
 							
 							if(move_uploaded_file($file_tmp, $file_destination)){
+                                $uploadRepository = new UploadRepository();
+                                $uploadRepository->upload($file_name_new, $title, $description);
 								$this->render('upload', ['messages' => ['Wkrótce administrator rozważy wysłane zdjęcie']]);
 								return;
 							}

@@ -24,8 +24,20 @@
 								<div class="inputIcon">
 									<i class="far fa-image"></i>
 								</div>
-								<input type="file" name="file" class="input" placeholder="Nazwa użytkownika">
+								<input type="file" name="file" class="input">
 							</div>
+                            <div class="inputContainer">
+                                <div class="inputIcon">
+                                    <i class="fas fa-font"></i>
+                                </div>
+                                <input type="text" name="title" class="input" placeholder="Tytuł">
+                            </div>
+                            <div class="inputContainer">
+                                <div class="inputIcon">
+                                    <i class="fas fa-bold"></i>
+                                </div>
+                                <input type="text" name="description" class="input" placeholder="Opis">
+                            </div>
 							<?php
 							if(isset($messages)){
 								foreach($messages as $message) {
