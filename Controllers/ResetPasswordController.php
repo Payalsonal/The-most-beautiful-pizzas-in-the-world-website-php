@@ -9,6 +9,7 @@ class ResetPasswordController extends AppController {
 		if(!$this->isPost()) {
             unset($_SESSION['email']);
             $this->render('resetPassword');
+            return;
         }
         $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
         if(empty($email)){

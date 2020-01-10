@@ -12,6 +12,7 @@ class RegisterController extends AppController {
             unset($_SESSION['password']);
             unset($_SESSION['email']);
             $this->render('register');
+            return;
         }
         $userName = $_POST['userName'];
         $password = $_POST['password'];
