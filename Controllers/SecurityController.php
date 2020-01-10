@@ -16,7 +16,7 @@ class SecurityController extends AppController {
         }
         $userName = $_POST['userName'];
         $password = $_POST['password'];
-        password_hash($password, PASSWORD_DEFAULT);
+       // $zmienna = password_hash($password, PASSWORD_DEFAULT);
         $userRepository = new UserRepository();
         $user = $userRepository->getUser($userName);
         if (!$user) {

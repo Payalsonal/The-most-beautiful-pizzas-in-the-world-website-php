@@ -10,6 +10,7 @@ class ChangePasswordController extends AppController {
         unset($_SESSION['password1']);
         unset($_SESSION['password2']);
         $this->render('changePassword');
+        return;
     }
         $password1 = $_POST['password1'];
         $password2 = $_POST['password2'];

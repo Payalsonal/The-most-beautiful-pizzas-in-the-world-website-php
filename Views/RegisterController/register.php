@@ -28,13 +28,13 @@
 							</div>
 							<div class="inputContainer">
 								<div class="inputIcon">
-									<i class="far fa-envelope-open"></i>
+                                    <i class="fas fa-lock-open"></i>
 								</div>
 								<input type="password" name="password" class="input" placeholder="password">
 							</div>
 							<div class="inputContainer">
 								<div class="inputIcon">
-									<i class="fas fa-lock-open"></i>
+                                    <i class="far fa-envelope-open"></i>
 								</div>
 								<input type="text" name="email" class="input" placeholder="email@email.com">
 							</div>

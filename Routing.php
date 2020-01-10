@@ -6,6 +6,7 @@ require_once 'Controllers\RegisterController.php';
 require_once 'Controllers\ChangePasswordController.php';
 require_once 'Controllers\ResetPasswordController.php';
 require_once 'Controllers\UploadController.php';
+require_once 'Controllers\ApprovePostController.php';
 
 class Routing {
     private $routes = [];
@@ -19,8 +20,9 @@ class Routing {
 			'register' => ['controller' => 'RegisterController', 'action' => 'register'],
 			'changePassword' => ['controller' => 'ChangePasswordController', 'action' => 'changePassword'],
 			'resetPassword' => ['controller' => 'ResetPasswordController', 'action' => 'resetPassword'],
-			'upload' => ['controller' => 'UploadController', 'action' => 'upload']
-			
+			'upload' => ['controller' => 'UploadController', 'action' => 'upload'],
+			'approvePost' => ['controller' => 'ApprovePostController', 'action' => 'show']
+
         ];
     }
 
