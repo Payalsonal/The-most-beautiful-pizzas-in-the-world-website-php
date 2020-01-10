@@ -1,6 +1,7 @@
 <?php
 
 require_once "Repository.php";
+require_once __DIR__.'//..//Model//UploadedPost.php';
 
 class UploadRepository extends Repository {
 
@@ -15,5 +16,31 @@ class UploadRepository extends Repository {
             ':userId' => $_SESSION['id']
         ));
 
+    }
+    public function getPosts(int $page): array {
+        $result = [];
+        if($page === 0){
+            $photoIndex = 0;
+        }
+        else{
+            $photoIndex = ($page * 4);
+        }
+        $stmt = $this->database->connect()->prepare("
+			SELECT upload.* 
+			FROM upload 
+			ORDER BY upload.id LIMIT ".$photoIndex.", 4");
+        $stmt->execute();
+        $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($posts as $post) {
+            $result[] = new UploadedPost(
+                $post['source'],
+                $post['title'],
+                $post['description'],
+                $post['id']
+            );
+        }
+
+        return $result;
     }
 }

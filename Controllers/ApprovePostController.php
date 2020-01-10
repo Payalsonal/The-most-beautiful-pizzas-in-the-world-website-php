@@ -2,7 +2,7 @@
 
 require_once 'AppController.php';
 require_once __DIR__.'//..//Model//Post.php';
-require_once __DIR__.'//..//Repository//PostRepository.php';
+require_once __DIR__.'//..//Repository//UploadRepository.php';
 
 class ApprovePostController extends AppController {
 
@@ -24,18 +24,8 @@ class ApprovePostController extends AppController {
                 $_SESSION['page'] = 0;
             }
         }
-		$category = str_replace("/?page=postPage&", "", $_SERVER['REQUEST_URI']);
-		if(isset($_SESSION['category'])){
-			if($_SESSION['category'] != $category){
-				$_SESSION['category'] = $category;
-				$_SESSION['page'] = 0;
-			}
-		}
-		else{
-			$_SESSION['category'] = $category;
-		}
-		$postRepository = new PostRepository();
-		$posts = $postRepository->getPosts($category, $_SESSION['page']);
+		$uploadRepository = new UploadRepository();
+		$posts = $uploadRepository->getPosts($_SESSION['page']);
         $this->render('approvePost', ['posts' => $posts]);
 		return;
     }

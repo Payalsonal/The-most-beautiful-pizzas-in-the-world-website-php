@@ -37,13 +37,10 @@
 					</div>
 					<?php foreach($posts as $post): ?>
 						<div class="post">
-						<img src="../Public/img/<?php echo $post->getCategory()."/".$post->getSource()?>" class="PostImage">
+						<img src="../Uploads//<?php echo $post->getSource()?>" class="PostImage">
 						<ul class="postDescription">
 							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
 							<li> <?php echo $post->getDescription()?> </li>
-							<li><?php echo $post->getLikes()?> <i class="fas fa-heart"></i>
-								<?php echo $post->getDisLikes()?> <i class="fas fa-heart-broken"></i></i>
-								<span style="font-weight: 700">SHARE</span> <i class="fas fa-share-alt"></i> </li>
 						</ul>
 					</div>
 					<?php endforeach ?>
