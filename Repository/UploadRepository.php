@@ -37,6 +37,7 @@ class UploadRepository extends Repository {
                 $post['source'],
                 $post['title'],
                 $post['description'],
+                $post['userId'],
                 $post['id']
             );
         }

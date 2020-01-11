@@ -41,6 +41,7 @@
 						<ul class="postDescription">
 							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
 							<li> <?php echo $post->getDescription()?> </li>
+							<li> <?php echo $post->getUserId()?> </li>
 						</ul>
 					</div>
 					<?php endforeach ?>
