@@ -1,0 +1,63 @@
+.post{
+	float: left;
+	border-style: groove;
+	border-width: 1px;
+	border-color: gray;
+}
+.postImage{
+	width: 358px;
+	height: 266px;
+	
+}
+.postDescription{
+	color: #2699fb;
+	margin: 0px;
+	padding: 20px; 
+	height: 156px;
+	position: relative;
+}
+.postDescription > li{
+	list-style-type: none;
+	margin-top: 15px;
+	letter-spacing: 1px;
+	line-height: 80%;
+}
+.postDescription > li:last-child{
+	width: 80%;
+	text-align: center;
+	font-size: 20px;
+	position: absolute;
+    bottom: 20px;
+	
+}
+.arrowContainer{
+	float: left;
+}
+.arrow{
+	color: #2699fb;
+	font-size: 100px;
+	border: none;
+	width: 180px;
+	height: 464px;
+	background-color: white;
+}
+.confirm{
+	color: green;
+}
+.confirm:hover{
+	color: darkgreen;
+}
+.denny{
+	color: red;
+}
+.denny:hover{
+	color: darkred;
+}
+.submit{
+	all: unset;
+	font-size: 30px;
+	margin: 0 40px 0 40px;
+}
+.arrow:hover{
+	color: #B0DAFE;
+}

@@ -18,7 +18,7 @@
 		<meta name="description" content="Serwis zrzeszający wszystkich fanatyków pięknych pizz na świecie" />
 		<meta name="keywords" content="pizza, pizzy, zdjęcia, obrazki, piękne, piekne" />
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
-		<link href="../Public/css/posts.css" rel="stylesheet" type="text/css" />
+		<link href="../Public/css/approvePost.css" rel="stylesheet" type="text/css" />
 		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -39,9 +39,17 @@
 						<div class="post">
 						<img src="../Uploads//<?php echo $post->getSource()?>" class="PostImage">
 						<ul class="postDescription">
-							<li> <h2> <?php echo $post->getTitle()?> </h2> </li>
-							<li> <?php echo $post->getDescription()?> </li>
-							<li> <?php echo $post->getUserId()?> </li>
+							<li> <h2> <?php echo"Tytuł: ".$post->getTitle()?> </h2> </li>
+							<li> <?php echo "Opis: ".$post->getDescription()?> </li>
+							<li> <?php echo "Dodano przez: ".$post->getUserId()?> </li>
+							<li> <?php echo(
+							        '<button type = "submit" class="submit">
+                                        <i class=" confirm fas fa-check"></i>
+                                     </button>'.
+                                    '<button type = "submit" class="submit">
+                                        <i class=" denny fas fa-times"></i>
+                                     </button>') ?>
+                            </li>
 						</ul>
 					</div>
 					<?php endforeach ?>
