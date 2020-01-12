@@ -10,7 +10,7 @@
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/register.css" rel="stylesheet" type="text/css" />
 		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="validation.js"></script>
+        <script type="text/javascript" src="Views/RegisterController/validation.js"></script>
 	</head>
 	<body>
 	

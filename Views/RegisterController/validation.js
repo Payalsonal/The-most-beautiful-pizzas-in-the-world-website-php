@@ -36,13 +36,7 @@ window.onload = function(){
     document.getElementById("contactForm").onsubmit = function () {
         if(isRightLength(this.userName, 'Nazwa użytkownika')){
             if(isRightLength(this.password, 'Hasło')){
-                if(isAlphaNumeric(this.userName.value, 'Nazwa użytkownika')){
-                    if(isAlphaNumeric(this.password.value, 'Hasło')){
-                        if(ValidateEmail(this.email)){
-                            return true;
-                        }
-                    }
-                }
+                return true;
             }
         }
         return false;
