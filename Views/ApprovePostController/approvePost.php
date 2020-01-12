@@ -65,6 +65,7 @@
                                     </li>
                                 </ul>
                                 <input type="hidden" name="postId" value=<?php echo($post->getId()) ?>>
+                                <input type="hidden" name="postSource" value=<?php echo($post->getSource()) ?>>
                             </form>
 					    </div>
 					<?php endforeach ?>

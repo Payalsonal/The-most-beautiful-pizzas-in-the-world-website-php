@@ -32,7 +32,8 @@ class ApprovePostController extends AppController {
             }
             if(isset($_POST['denny'])){
                 $postId = $_POST['postId'];
-                $uploadRepository->deletePost($postId);
+                $postSource = $_POST['postSource'];
+                $uploadRepository->deletePost($postId, $postSource);
             }
         }
         $uploadRepository = new UploadRepository();

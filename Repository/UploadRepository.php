@@ -42,10 +42,12 @@ class UploadRepository extends Repository {
         }
         return $result;
     }
-    public function deletePost(string $postId){
+    public function deletePost(string $postId, string $postSource){
         $delete = $this->database->connect()->prepare("DELETE FROM upload WHERE upload.id = :id ");
         $delete->execute(array(
             ':id' => $postId
         ));
+        $path = 'Uploads/' . $postSource;
+        unlink($path);
     }
 }
