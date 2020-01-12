@@ -20,13 +20,27 @@ class ApprovePostController extends AppController {
 				unset($_POST['previous']);
 				$_SESSION['page'] = $_SESSION['page'] -1;
 			}
-            if($_SESSION['page'] < 0){
+            if($_SESSION['page'] < 0) {
                 $_SESSION['page'] = 0;
             }
+            $uploadRepository = new UploadRepository();
+            if(isset($_POST['confirm'])){
+                $title = $_POST['title'];
+                $description = $_POST['description'];
+                $category = $_POST['category'];
+                $postId = $_POST['postId'];
+            }
+            if(isset($_POST['denny'])){
+                $postId = $_POST['postId'];
+                $uploadRepository->deletePost($postId);
+            }
         }
-		$uploadRepository = new UploadRepository();
+        $uploadRepository = new UploadRepository();
 		$posts = $uploadRepository->getPosts($_SESSION['page']);
         $this->render('approvePost', ['posts' => $posts]);
 		return;
+       // $this->render('approvePost', ['messages' => [$title.' '.$description. ' '.$category.' '.$postId]]);
+       // return;
     }
+
 }

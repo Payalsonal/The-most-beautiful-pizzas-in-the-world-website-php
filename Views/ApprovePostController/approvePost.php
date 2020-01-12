@@ -35,23 +35,38 @@
 							</button>
 						</form>
 					</div>
+                    <?php
+                    if(isset($messages)){
+                        foreach($messages as $message) {
+                            echo $message;
+                        }
+                    }
+                    ?>
 					<?php foreach($posts as $post): ?>
-						<div class="post">
-						<img src="../Uploads//<?php echo $post->getSource()?>" class="PostImage">
-						<ul class="postDescription">
-							<li> <h2> <?php echo"Tytuł: ".$post->getTitle()?> </h2> </li>
-							<li> <?php echo "Opis: ".$post->getDescription()?> </li>
-							<li> <?php echo "Dodano przez: ".$post->getUserId()?> </li>
-							<li> <?php echo(
-							        '<button type = "submit" class="submit">
-                                        <i class=" confirm fas fa-check"></i>
-                                     </button>'.
-                                    '<button type = "submit" class="submit">
-                                        <i class=" denny fas fa-times"></i>
-                                     </button>') ?>
-                            </li>
-						</ul>
-					</div>
+                        <div class="post">
+                            <form action="?page=approvePost" method="POST" style="all: unset;">
+                                <img src="../Uploads//<?php echo $post->getSource()?>" class="PostImage">
+                                <ul class="postDescription">
+                                    <li> <h2> <?php echo"Tytuł: ".
+                                                "<input type='text' name='title' value='{$post->getTitle()}'>"?>
+                                        </h2> </li>
+                                    <li>  <?php echo"Opis: ".
+                                            "<input type='text' name='description' value='{$post->getDescription()}'>"?>
+                                    </li>
+                                    <li> <?php echo "Kategoria <1-6>: <input type='text' name='category'> "?></li>
+                                    <li> <?php echo "Dodano przez: ".$post->getUserId()?> </li>
+                                    <li> <?php echo(
+                                            '<button type = "submit" class="submit" name="confirm">
+                                                <i class=" confirm fas fa-check"></i>
+                                             </button>'.
+                                            '<button type = "submit" class="submit" name="denny">
+                                                <i class=" denny fas fa-times"></i>
+                                             </button>') ?>
+                                    </li>
+                                </ul>
+                                <input type="hidden" name="postId" value=<?php echo($post->getId()) ?>>
+                            </form>
+					    </div>
 					<?php endforeach ?>
 					<div class = "arrowContainer">
 						<form action='<?php echo($_SERVER['REQUEST_URI'])?>' method="POST">

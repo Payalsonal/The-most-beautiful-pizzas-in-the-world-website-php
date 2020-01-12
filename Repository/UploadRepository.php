@@ -15,7 +15,6 @@ class UploadRepository extends Repository {
             ':description' => $description,
             ':userId' => $_SESSION['id']
         ));
-
     }
     public function getPosts(int $page): array {
         $result = [];
@@ -41,7 +40,12 @@ class UploadRepository extends Repository {
                 $post['id']
             );
         }
-
         return $result;
+    }
+    public function deletePost(string $postId){
+        $delete = $this->database->connect()->prepare("DELETE FROM upload WHERE upload.id = :id ");
+        $delete->execute(array(
+            ':id' => $postId
+        ));
     }
 }
