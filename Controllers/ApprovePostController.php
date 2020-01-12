@@ -45,8 +45,6 @@ class ApprovePostController extends AppController {
 		$posts = $uploadRepository->getPosts($_SESSION['page']);
         $this->render('approvePost', ['posts' => $posts]);
 		return;
-       // $this->render('approvePost', ['messages' => [$title.' '.$description. ' '.$category.' '.$postId]]);
-       // return;
     }
 
 }

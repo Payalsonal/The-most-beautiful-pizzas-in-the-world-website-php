@@ -20,7 +20,7 @@
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
 					<div class="userPanel">
-						<form action="?page=login" method="POST">
+						<form action="?page=login" method="POST" id="contactForm">
 							<div class="inputContainer">
 								<div class="inputIcon">
 									<i class="far fa-user"></i>

@@ -10,6 +10,7 @@
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/register.css" rel="stylesheet" type="text/css" />
 		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="validation.js"></script>
 	</head>
 	<body>
 	
@@ -19,7 +20,7 @@
 				<?php include(dirname(__DIR__).'/Common/logo.php'); ?>
 				<div id="mainContent">
 					<div class="userPanel">
-						<form action="?page=register" method="POST">
+						<form action="?page=register" method="POST" id="contactForm">
 							<div class="inputContainer">
 								<div class="inputIcon">
 									<i class="far fa-user"></i>
@@ -38,13 +39,7 @@
 								</div>
 								<input type="text" name="email" class="input" placeholder="email@email.com">
 							</div>
-							<?php
-							if(isset($messages)){
-								foreach($messages as $message) {
-									echo $message;
-									}
-								}
-							?>
+                            <div class="informationText" id="warning" style="color: red;"></div>
 							<div class="informationText">
 								<a href="?page=login" class="link"> Masz już konto? </a>
 							</div>
