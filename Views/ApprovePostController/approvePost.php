@@ -40,13 +40,14 @@
                             <form action="?page=approvePost" method="POST" style="all: unset;">
                                 <img src="../Uploads//<?php echo $post->getSource()?>" class="PostImage">
                                 <ul class="postDescription">
-                                    <li> <h2> <?php echo"Tytuł: ".
+                                    <li>  <?php echo" Tytuł: ".
                                                 "<input type='text' name='title' value='{$post->getTitle()}'>"?>
-                                        </h2> </li>
+                                    </li>
                                     <li>  <?php echo"Opis: ".
                                             "<input type='text' name='description' value='{$post->getDescription()}'>"?>
                                     </li>
-                                    <li> <?php echo "Kategoria <1-6>: <input type='text' name='category'> "?></li>
+                                    <li> <?php echo "Kategoria <1-6>: 
+                                            <input type='text' name='category'> "?></li>
                                     <li> <?php echo "Dodano przez: ".$post->getUserId()?> </li>
                                     <li> <?php echo(
                                             '<button type = "submit" class="submit" name="confirm">
