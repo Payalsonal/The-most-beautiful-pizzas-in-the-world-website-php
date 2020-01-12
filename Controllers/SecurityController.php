@@ -9,8 +9,8 @@ class SecurityController extends AppController {
     public function login()
     {
 		if (!$this->isPost()) {
-            unset($_SESSION['userName']);
-            unset($_SESSION['password']);
+            unset($_POST['userName']);
+            unset($_POST['password']);
             $this->render('login');
             return;
         }
@@ -29,8 +29,8 @@ class SecurityController extends AppController {
         }
         $_SESSION["id"] = $user->getID();
         $_SESSION["role"] = $user->getRole();
-        unset($_SESSION['userName']);
-        unset($_SESSION['password']);
+        unset($_POST['userName']);
+        unset($_POST['password']);
         $url = "http://$_SERVER[HTTP_HOST]/";
         header("Location: {$url}?page=postPage&top");
     }

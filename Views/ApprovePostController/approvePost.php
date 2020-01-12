@@ -35,13 +35,6 @@
 							</button>
 						</form>
 					</div>
-                    <?php
-                    if(isset($messages)){
-                        foreach($messages as $message) {
-                            echo $message;
-                        }
-                    }
-                    ?>
 					<?php foreach($posts as $post): ?>
                         <div class="post">
                             <form action="?page=approvePost" method="POST" style="all: unset;">
