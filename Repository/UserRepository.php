@@ -56,14 +56,20 @@ class UserRepository extends Repository {
     }
 	
 	public function addUser(string $userName, string $password, string $email){
-		$result_set = $this->database->connect()->prepare("INSERT INTO `users` 
+        $this->database->connect()->beginTransaction();
+        try{
+            $result_set = $this->database->connect()->prepare("INSERT INTO `users` 
 		(`username`, `password`, `email`) 
 		VALUES (:username, :password, :email)");
-		$result_set->execute(array(
-			':username' => $userName,
-			':password' => $password,
-			':email' => $email
-		));
+            $result_set->execute(array(
+                ':username' => $userName,
+                ':password' => $password,
+                ':email' => $email
+            ));
+            $this->database->connect()->commit();
+        }catch(Exception $e){
+            echo "Failed: " . $e->getMessage();
+        }
 		
 	}
 	
