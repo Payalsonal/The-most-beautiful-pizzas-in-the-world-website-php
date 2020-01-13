@@ -73,6 +73,5 @@ class UserRepository extends Repository {
 			':password' => $password,
 			':id' => $id
 		));
-		
 	}
 }

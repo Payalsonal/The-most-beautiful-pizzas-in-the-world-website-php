@@ -2,6 +2,7 @@
 
 require_once 'AppController.php';
 require_once __DIR__.'//..//Repository//Repository.php';
+require_once __DIR__.'//..//Repository//UserRepository.php';
 
 class RegisterController extends AppController {
 
@@ -44,5 +45,18 @@ class RegisterController extends AppController {
         unset($_SESSION['email']);
         $url = "http://$_SERVER[HTTP_HOST]/";
         header("Location: {$url}?page=login");
+    }
+    public function checkAvailability()
+    {
+        if (isset($_POST["user_name"])) {
+            $userRepository = new UserRepository();
+            $result = $userRepository->getUser($_POST["user_name"]);
+            if($result == null){
+                echo ('0');
+            }
+            else{
+                echo('1');
+            }
+        }
     }
 }

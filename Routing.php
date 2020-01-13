@@ -21,8 +21,8 @@ class Routing {
 			'changePassword' => ['controller' => 'ChangePasswordController', 'action' => 'changePassword'],
 			'resetPassword' => ['controller' => 'ResetPasswordController', 'action' => 'resetPassword'],
 			'upload' => ['controller' => 'UploadController', 'action' => 'upload'],
-			'approvePost' => ['controller' => 'ApprovePostController', 'action' => 'show']
-
+			'approvePost' => ['controller' => 'ApprovePostController', 'action' => 'show'],
+			'availabilityName' => ['controller' => 'RegisterController', 'action' => 'checkAvailability']
         ];
     }
 

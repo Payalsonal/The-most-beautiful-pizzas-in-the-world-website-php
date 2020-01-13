@@ -10,8 +10,12 @@
 		<link href="../Public/css/style.css" rel="stylesheet" type="text/css" />
 		<link href="../Public/css/register.css" rel="stylesheet" type="text/css" />
 		<script src="https://kit.fontawesome.com/397b33f34a.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="Views/RegisterController/validation.js"></script>
-	</head>
+        <script type="text/javascript" src="Views/RegisterController/availability.js"></script>
+
+    </head>
 	<body>
 	
 		<div id="container">
@@ -25,7 +29,7 @@
 								<div class="inputIcon">
 									<i class="far fa-user"></i>
 								</div>
-								<input type="text" name="userName" class="input" placeholder="Nazwa użytkownika">
+								<input type="text" name="userName" class="input" id="userName" placeholder="Nazwa użytkownika">
 							</div>
 							<div class="inputContainer">
 								<div class="inputIcon">
@@ -43,7 +47,7 @@
 							<div class="informationText">
 								<a href="?page=login" class="link"> Masz już konto? </a>
 							</div>
-							<input type="submit" value="Continue" class="inputSubmit"><br>
+							<input type="submit" value="Continue" class="inputSubmit" id="register"><br>
 						</form>
 					</div>	
 				</div>
@@ -52,3 +56,5 @@
 		</div>
 	</body>
 </html>
+
+
