@@ -19,7 +19,7 @@ function isAlphaNumeric(str, name) {
     }
     return true;
 }
-function ValidateEmail(inputText)
+function validateEmail(inputText)
 {
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if(inputText.value.match(mailformat))
@@ -36,7 +36,13 @@ window.onload = function(){
     document.getElementById("contactForm").onsubmit = function () {
         if(isRightLength(this.userName, 'Nazwa użytkownika')){
             if(isRightLength(this.password, 'Hasło')){
-                return true;
+                if(isAlphaNumeric(this.userName.value, 'Nazwa użytkownika')){
+                    if(isAlphaNumeric(this.password.value, 'Hasło')){
+                        if(validateEmail(this.email)){
+                            return true;
+                        }
+                    }
+                }
             }
         }
         return false;
